@@ -1,4 +1,4 @@
-//Copyright 2019 Lenkin Slava
+// Copyright 2019 Lenkin Slava
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -30,14 +30,14 @@ void CountingSort(double *inp, double *out, int byteNum, int size) {
     }
     for (int i = 0; i < size; i++) {
         out[counter[mas[8 * i + byteNum]]] = inp[i];
-	    counter[mas[8 * i + byteNum]]++;
+        counter[mas[8 * i + byteNum]]++;
     }
 }
 
 void PrintArray(double *array, int size) {
     if (size < 15) {
         for (int i = 0; i < size; i++) {
-    	    std::cout << array[i] << " ";
+            std::cout << array[i] << " ";
         }
         std::cout << std::endl;
     }
